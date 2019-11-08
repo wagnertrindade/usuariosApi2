@@ -71,6 +71,8 @@ public class UsuarioControle {
         else
             throw new TokenException();
 
+        usuarioAtualizar.setId(id);
+
         return usuarioServico.atualizarUsuario(usuarioAtualizar);
 
     }

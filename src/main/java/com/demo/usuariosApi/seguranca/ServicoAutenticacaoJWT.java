@@ -37,7 +37,12 @@ public class ServicoAutenticacaoJWT {
 
     public static String obterAutenticacao(HttpServletRequest requisicao) {
 
-        return requisicao.getHeader(CABECALHO);
+        String token = requisicao.getHeader(CABECALHO);
+
+        if (token != null)
+            token = token.replace(PREFIXO_TOKEN + " ", "");
+
+        return token;
 
     }
 }
