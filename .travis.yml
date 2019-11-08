@@ -1,16 +1,14 @@
 language: java
-
 before_install:
-  - chmod +x gradlew
-
+- chmod +x gradlew
 jdk:
-  - openjdk8
-
+- openjdk8
 script:
-  - ./gradlew build --scan -s
-
+- "./gradlew build --scan -s"
 deploy:
   provider: heroku
   api-key:
-    secure: $HEROKU_API_KEY
-  app:  usuarios-api-demo
+    secure: "$HEROKU_API_KEY"
+  app: usuarios-api-demo
+  api_key:
+    secure: FhHJuqXt2f9XY1OkGD5BFPSsgB4Uk+iIUIp5QpwPMyjaRXT0TEYOcqVG2OZA5ojUmzKDUC6Mz6kcm8YMwJpvscUKUOTfVRm2UKuQT0soZe/7zo/H7TXU8swahOq3hGkfVRQCYT/6hmL4YkFfM14OBxcnm9h/f8zTmYpBO8ALpONa+3eldEzVAxQi4L696nV8oxLpOXpSF3NJLfM4HZsZaqZ8ztTfsnVXWrU+74zeDNXY1zeitIybvMmjuNsovPS84Xq7avACkTOwlEEzd9xZ1saJo8NCOdLuXJvO6iEhJUHQy2M/Mdw72ATsCDU6uPQAsYbnMKYLkNg3RxpPVjfb57IjsbBm1YP2KZrPO3jYBTWOT5bxDUv+Bd4DaaT+slG+zfmbhiUEHekS51+XZ/fifjN0TZ9tPUbh19NhkRSLxFvecmYSL5Ez7KKkiw3tqXSpHN4LWnDHWUKb81mr3BL/3ekPnV2Luq00ygOS7InaxK1tNnn3BxAU/rhoymv4uX6ciStiCA0tP3wEikCsWKyYgSBbvnA/8UbNw6GfjgyH1yp4jssD7s8cyZiJD4FSo/As9FP4eztNeujN1IgltgikQFyOO14ti+suGv4dcJbcE3uxomXzN6P18q79PlRktKHWpBPOHFvUO0TV/yaxWFdvpRiaS24LBPI41QDPCDncELU=
