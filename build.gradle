@@ -13,7 +13,8 @@ repositories {
 }
 
 configurations.all {
-	exclude group: 'org.slf4j', module: 'slf4j-api'
+	exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+	exclude group: 'org.jboss.logging', module: 'jboss-logging'
 }
 
 dependencies {
