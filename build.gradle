@@ -23,7 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 	implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '6.2'
-	testImplementation 'org.hsqldb:hsqldb'
+	implementation 'org.hsqldb:hsqldb'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
